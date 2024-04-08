@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.CustomerProfileActivity"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+    >
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="15dp"
+            android:layout_margin="10dp"
+            android:translationY="14dp"
+
+            >
+            <ImageView
+                android:id="@+id/img_nav_UserImg"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+
+                android:scaleType="centerCrop"
+                android:backgroundTint="@color/white"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUpdateImg"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:translationY="-16dp"
+            android:translationX="35dp"
+            android:backgroundTint="@color/white"
+            app:icon="@drawable/baseline_linked_camera_24"
+            app:iconTint="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Tên chủ shop:"
+            android:textStyle="italic"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#48AA38"
+            app:helperTextTextColor="#48AA38"
+            app:hintTextColor="#48AA38">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_CustomerFullNameUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Địa chỉ shop:"
+            android:textStyle="italic"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#48AA38"
+            app:helperTextTextColor="#48AA38"
+            app:hintTextColor="#48AA38">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_CustomerAddressUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Số điện thoại liên hệ:"
+            android:textStyle="italic"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#48AA38"
+            app:helperTextTextColor="#48AA38"
+            app:hintTextColor="#48AA38">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_CustomerPhoneNumberUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:id="@+id/txtNotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textColor="@color/main_color"/>
+        <Button
+            android:id="@+id/btnUpdateCustomerInf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CẬP NHẬP"
+            android:backgroundTint="@color/main_color"
+            />
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

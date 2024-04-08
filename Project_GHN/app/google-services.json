@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "517861512358",
+    "project_id": "giao-hang-nhanh-66984",
+    "storage_bucket": "giao-hang-nhanh-66984.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517861512358:android:cf3fd012e1416fc2745067",
+        "android_client_info": {
+          "package_name": "tdtu.edu.project_ghn"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEgQq54BbICfRkBn26qRJDw7-Cy4uVv7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

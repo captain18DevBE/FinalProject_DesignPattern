@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lấy hình ảnh từ:"
+            android:textSize="19dp"
+            android:textColor="@color/black"
+            android:textStyle="italic"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStartCamera"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Sử dụng Camera"
+            app:icon="@drawable/baseline_linked_camera_24"
+            app:iconTint="@color/black"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            app:strokeColor="@color/black"
+            android:backgroundTint="@color/white"
+            app:strokeWidth="1dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStartGallery"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Bộ sưu tập"
+            app:icon="@drawable/image_gallery"
+            app:iconTint="@color/black"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            app:strokeColor="@color/black"
+            android:backgroundTint="@color/white"
+            app:strokeWidth="1dp"
+            />
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

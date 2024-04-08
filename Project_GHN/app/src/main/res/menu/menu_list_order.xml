@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_lstOrder_current"
+        android:title="@string/nav_list_order_current"/>
+
+    <item
+        android:id="@+id/menu_lstOrder_history"
+        android:title="@string/nav_list_order_history"/>
+</menu>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chọn dịch vụ giao hàng:"
+            android:textSize="19dp"
+            android:textColor="@color/black"
+            android:textStyle="italic"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMotoBike"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Xe máy: 30.000 VND"
+            app:icon="@drawable/fast_delivery"
+            app:iconTint="@color/black"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            app:strokeColor="@color/black"
+            android:backgroundTint="@color/white"
+            app:strokeWidth="1dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTricycles"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Xe ba gác: 300.000 VND"
+            app:icon="@drawable/tricycle"
+            app:iconTint="@color/black"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            app:strokeColor="@color/black"
+            android:backgroundTint="@color/white"
+            app:strokeWidth="1dp"
+            />
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

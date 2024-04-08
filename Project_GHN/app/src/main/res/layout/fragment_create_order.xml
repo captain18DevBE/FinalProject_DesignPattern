@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:theme="@style/card_view_createOrder"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:textStyle="italic"
+                android:text="Địa chỉ shop:"
+                />
+
+            <TextView
+                android:id="@+id/txtShopAddress"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:text="" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:textStyle="italic"
+                android:text="Địa chỉ người nhận:"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txtAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:hint="Địa chỉ người nhận"/>
+
+                <ImageButton
+                    android:id="@+id/btnMap2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@android:drawable/ic_dialog_map"
+                    tools:src="@android:drawable/ic_dialog_map" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:theme="@style/card_view_createOrder"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thời gian giao hàng ước tính:"/>
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(không hoàn toàn chính xác)"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:theme="@style/card_view_createOrder"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dịch vụ giao hàng"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/space_choseService"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/white"
+                android:text="Tiết kiệm: 30.000 VND"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:icon="@drawable/product"
+                app:iconTint="@color/black"
+                app:strokeColor="@color/black"
+                app:strokeWidth="1dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:theme="@style/card_view_createOrder"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loại xe vận chuyển:"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/space_choseTransport"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/white"
+                android:text="Xe máy: 30.000 VND"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:icon="@drawable/fast_delivery"
+                app:iconTint="@color/black"
+                app:strokeColor="@color/black"
+                app:strokeWidth="1dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNextToDesProduct"
+        android:layout_gravity="center"
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:text="Tiếp tục"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        app:strokeColor="@color/main_color"
+        android:backgroundTint="#3E3AF4"
+        app:strokeWidth="1dp"
+        android:layout_marginBottom="10dp"
+        />
+</androidx.appcompat.widget.LinearLayoutCompat>

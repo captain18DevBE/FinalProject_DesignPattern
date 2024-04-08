@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <group android:checkableBehavior="single">
+        <item
+            android:title="@string/nav_order_title"
+            >
+            <menu>
+                <item
+                    android:id="@+id/nav_create_order"
+                    android:title="@string/nav_create_order"
+                    android:icon="@drawable/baseline_receipt_24"/>
+                <item
+                    android:id="@+id/nav_list_current_order"
+                    android:title="@string/nav_list_order"
+                    android:icon="@drawable/list_order"/>
+            </menu>
+        </item>
+
+    </group>
+    <item android:title="@string/nav_account">
+        <menu>
+            <item android:title="@string/nav_account_security"
+                android:id="@+id/nav_changePass"
+                android:icon="@drawable/baseline_lock_person_24"/>
+            <item
+                android:title="@string/nav_sign_out"
+                android:id="@+id/nav_signOut"
+                android:icon="@drawable/logout"
+                />
+        </menu>
+    </item>
+</menu>

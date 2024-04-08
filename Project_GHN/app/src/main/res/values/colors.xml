@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bray">#f7f2f9</color>
+    <color name="main_color">#48AA38</color>
+    <color name="btn_accept">#3E3AF4</color>
+    <color name="btn_create">#427125</color>
+    <color name="btn_destroy">#DF5B31</color>
+    <color name="item_recycle_view">#F5F5F5</color>
+    <color name="dialog_background">#D9D9D9</color>
+</resources>

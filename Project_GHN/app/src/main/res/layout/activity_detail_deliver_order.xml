@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.ShipperOrderDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <TextView
+        android:id="@+id/txtDateCreated2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Ngày tạo: XX - XX - XXXX"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDateCreated2">
+
+        <TextView
+            android:id="@+id/txtShopAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ shop:" />
+
+        <TextView
+            android:id="@+id/txtShopPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SĐT shop: " />
+
+        <TextView
+            android:id="@+id/txtReceiverName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên người nhận" />
+
+        <TextView
+            android:id="@+id/txtReceiverAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ người nhận" />
+
+        <TextView
+            android:id="@+id/txtAddressDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chi tết số nhà, số tầng:" />
+
+        <TextView
+            android:id="@+id/txtReceiverPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SĐT người nhận" />
+
+        <TextView
+            android:id="@+id/txtTransport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loại xe: Xe máy (70.000 VND)" />
+
+        <TextView
+            android:id="@+id/txtService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dịch vụ: Tiết kiệm (30.000 VND)" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtProductSize"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kích cỡ: M" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtProductType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loại hàng: Điện tử" />
+
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ghi chú:" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:layout_marginTop="5px"
+            android:layout_marginBottom="15px"
+            android:paddingHorizontal="20px"
+            android:paddingVertical="5px"
+            android:background="@drawable/outline"
+            >
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget. At tellus at urna condimentum mattis pellentesque id nibh tortor. A diam sollicitudin tempor id eu nisl nunc. Quis varius quam quisque id diam vel quam elementum pulvinar. Auctor elit sed vulputate mi sit amet mauris commodo quis. Facilisis volutpat est velit egestas dui. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Nibh tortor id aliquet lectus proin nibh. Turpis egestas maecenas pharetra convallis."
+                />
+        </androidx.core.widget.NestedScrollView>
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trạng thái đơn hàng:" />
+
+        <TextView
+            android:id="@+id/txtWaitForShipper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Chờ nhân viên vận chuyển" />
+
+        <TextView
+            android:id="@+id/txtBeingShipped"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Đang được vận chuyển" />
+
+        <TextView
+            android:id="@+id/txtFinishedShipping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Đã hoàn thành vận chuyển" />
+
+        <TextView
+            android:id="@+id/txtIsPaid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Đã thanh toán" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtTotalMoney2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="TỔNG TIỀN: XXX VND"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+    <Button
+        android:id="@+id/btnUpdateOrderState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hủy đơn hàng"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotalMoney2" />
+
+    <TextView
+        android:id="@+id/txtFinishedDate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnUpdateOrderState" />
+</androidx.constraintlayout.widget.ConstraintLayout>

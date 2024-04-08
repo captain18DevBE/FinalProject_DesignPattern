@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Giao hàng nhanh</string>
+
+    <!--    for Customer-->
+    <string name="nav_account">Tài khoản</string>
+    <string name="nav_order_title">Đơn hàng</string>
+    <string name="nav_sign_out">Đăng xuất</string>
+    <string name="nav_account_security">Bảo mật</string>
+    <string name="nav_create_order">Tạo đơn hàng</string>
+    <string name="nav_list_order">Danh sách đơn hàng</string>
+    <string name="nav_current_order">Đơn đang giao</string>
+    <string name="nav_histories_order">Lịch sử</string>
+    <string name="nav_private">Cá nhân</string>
+    <string name="nav_order_history">Lịch sử</string>
+    <string name="nav_pay_method">Thanh toán</string>
+    <string name="nav_summary">Tổng quan</string>
+    <string name="nav_drawer_open">Mở thanh điều hướng</string>
+    <string name="nav_drawer_close">Đóng thanh điều hướng</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="nav_list_order_current">Đang giao</string>
+    <string name="nav_list_order_history">Lịch sử</string>
+    <!--    for shipper-->
+    <string name="nav_change_info">Đổi thông tin</string>
+</resources>

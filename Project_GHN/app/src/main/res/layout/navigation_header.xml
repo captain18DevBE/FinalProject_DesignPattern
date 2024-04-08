@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:theme="@style/Theme.menu">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="15dp"
+            android:layout_margin="10dp"
+            android:translationY="14dp"
+            >
+            <ImageView
+                android:id="@+id/img_nav_UserImg"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/demo"
+                android:scaleType="centerCrop"
+                android:backgroundTint="@color/white"
+                />
+
+        </androidx.cardview.widget.CardView>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNextToProfileCustomer"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:translationY="-15dp"
+            android:backgroundTint="@color/main_color"
+            android:background="@android:color/transparent"
+            android:translationX="35dp"
+            app:iconTint="@color/white"
+            app:icon="@drawable/edit_profile_user"/>
+
+    <TextView
+        android:id="@+id/txtNav_UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trần Lê Duy"
+        android:textSize="16dp"
+        android:textStyle="normal"/>
+
+    <TextView
+        android:id="@+id/txtNav_UserEmail"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tranleduy@gmail.com"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        />
+</androidx.appcompat.widget.LinearLayoutCompat>
